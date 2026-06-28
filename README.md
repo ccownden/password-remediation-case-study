@@ -43,9 +43,9 @@ The solution combined:
 
 Implemented NordPass across all business accounts, enforcing:
 
-* Unique, randomly generated passwords (16–24+ characters) per service  
+* Unique, randomly generated, lengthy and complex passwords (16–24+ characters) per service  
 * Encrypted vault storage with zero-knowledge architecture  
-* Removal of admin access to end-user credentials
+* Limited admin privileges
 
 ### **2\. Secure Remote Access (NordVPN)**
 
@@ -61,21 +61,23 @@ Created step-by-step guides covering:
 * Accessing and navigating the password vault  
 * Password reset flows for key services  
 * Account recovery procedures
+* Using tech stack and maintaining security best practices as a solo business owner
 
-This removed the dependency on IT or admin intervention for routine resets, reducing the risk of credentials being shared or exposed during support requests.
+This removed the dependency on IT or admin intervention for routine resets to empower the business owner to do all tasks independently and confidently.
 
 ### **4\. MFA Implementation**
 
-Deployed Google Authenticator across all critical systems, adding a second factor to all key accounts.
+Deployed Google Authenticator across all critical systems, adding a second factor to all key accounts. An example of this is, I added a passkey and touch ID to the Stripe account. 
 
 ### **5\. Security Awareness Training**
 
-Educated the business owner on:
+I also educated the business owner on:
 
 * Risks of weak and reused passwords  
-* Credential hygiene and clean desk policy  
-* Least privilege and privileged access management  
+* Password hygiene and creation (length, age, reuse and complexity)
+* Least privilege and privileged access management
 * Secure credential handling and the importance of password isolation
+* Phishing & Social Engineering techniques to watch out for
 
 ---
 
@@ -83,13 +85,13 @@ Educated the business owner on:
 
 | Metric | Before | After |
 | ----- | ----- | ----- |
-| Estimated offline crack time | \< 14 days | Effectively infeasible |
-| Password reuse | Present across services | Eliminated |
-| Secure credential storage | None | Encrypted vault (NordPass) |
-| Admin access to passwords | Shared | Isolated to account owner |
-| Encrypted browsing | None | VPN deployed |
-| MFA | Not in use | Deployed across critical accounts |
-| Self-service recovery | Not available | Guides in place (Scribehow) |
+| Estimated offline crack time | \< 14 days | Created using strong password principles |
+| Password reuse | Present across services | Eliminated risk |
+| Secure credential storage | None | Encrypted vault via NordPass |
+| Admin access to passwords | Shared with other administrators | Isolated to account owner only |
+| Encrypted browsing | None | NordVPN deployed |
+| MFA | Not in use | Deployed across all accounts |
+| Self-service recovery | Not available | Guides in place (Scribehow)|
 
 ---
 
@@ -99,32 +101,35 @@ Educated the business owner on:
 * **Credential isolation** — only the account owner holds password knowledge  
 * **Zero-knowledge storage** — vault provider cannot access stored credentials  
 * **Defence in depth** — vault \+ VPN \+ MFA \+ process improvements layered together  
-* **User empowerment** — business owner able to manage and recover credentials independently
+* **User empowerment** — business owner is able to manage and recover credentials independently without third-party support
 
 ---
 
 ## **Potential Future Improvements**
 
-* Phishing simulation training to test and reinforce awareness  
+* Reducing redundant services that connect with each other to reduce the attack surface
 * Periodic breach monitoring (e.g. Have I Been Pwned alerts for business domains)  
 * Formal password policy documentation
+* Cyber Essentials certification 
 
 ---
 
 ## **Important Note**
 
-No real passwords, account names, domains, or client-identifying information are included in this repository. All examples and references have been anonymised for security and privacy reasons.
+No real passwords, account names, domains or client-identifying information are included in this repository. All examples and references have been anonymised for security and privacy reasons to protect the small business I supported. 
 
 ---
 
 ## **Skills Demonstrated**
 
-| Skill | Relevance |
-| ----- | ----- |
-| Credential management | Core Security+ and CREST competency |
-| Risk identification and communication | Translating technical risk for a non-technical client |
-| Security awareness training | Addressing the human factor |
-| Tool deployment and configuration | NordPass, NordVPN, Google Authenticator, Scribehow |
-| Practical remediation | Not just identifying a problem — actually fixing it |
-| Professional documentation | Concise case study with measurable before/after outcomes |
+| Skill |
+| ----- | 
+| Credential management |
+| Risk identification and communication |
+| Security awareness training | 
+| Tool deployment and configuration | 
+| Practical remediation | 
+| Professional documentation |
+
+
 
